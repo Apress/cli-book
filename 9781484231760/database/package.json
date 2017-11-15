@@ -1,0 +1,14 @@
+{
+  "name": "theclibook-database",
+  "version": "1.0.0",
+  "description": "The database server for the second part of the book",
+  "main": "index.js",
+  "scripts": {
+    "start": "pouchdb-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Kowalski <rok@kowalski.gd>",
+  "dependencies": {
+    "pouchdb-server": "^1.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "lounger",
+  "version": "1.0.0",
+  "bin": "./bin/lounger-cli",
+  "preferGlobal": true,
+  "description": "a tool for couchdb/pouchdb administration",
+  "main": "./lib/lounger.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "bugs": {
+    "url": "http://example.com/lounger/issues"
+  },
+  "keywords": [
+    "couchdb",
+    "pouchdb"
+  ],
+  "author": "Robert Kowalski <rok@kowalski.gd>",
+  "dependencies": {
+    "nopt": "^3.0.6",
+    "npmlog": "^2.0.0",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "hock": "^1.2.0",
+    "mocha": "^2.3.4",
+    "nock": "^3.4.0"
+  }
+}

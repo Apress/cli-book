@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+const lounger = require('../lib/lounger.js');
+
+const nopt = require('nopt');
+const parsed = nopt({}, {}, process.argv, 2);
+
+const cmd = parsed.argv.remain.shift();
+
+lounger.load().then(() => {
+
+  lounger.cli[cmd]
+    .apply(null, parsed.argv.remain)
+    .catch((err) => {
+      console.error(err);
+    });
+
+}).catch((err) => {
+  console.error(err);
+});

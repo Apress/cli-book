@@ -1,0 +1,24 @@
+{
+  "name": "lounger",
+  "version": "1.0.0",
+  "description": "a tool for couchdb/pouchdb administration",
+  "main": "lib/lounger.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "nock": "^5.2.1"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "keywords": [
+    "couchdb",
+    "pouchdb"
+  ],
+  "author": "Robert Kowalski <rok@kowalski.gd>"
+}

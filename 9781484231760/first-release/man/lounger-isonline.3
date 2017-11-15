@@ -1,0 +1,23 @@
+.TH "LOUNGER\-ISONLINE" "3" "February 2016" "" ""
+.SH "NAME"
+\fBlounger-isonline\fR \- check if a database is online
+.SH SYNOPSIS
+.P
+.RS 2
+.nf
+lounger\.commands\.isonline(url)
+.fi
+.RE
+.SH DESCRIPTION
+.P
+Check if a CouchDB / PouchDB database is available on the current
+network\.
+.P
+url:
+The url must be a \fBString\fP and must be an url using the http or https
+protocol\.
+.P
+The command returns a promise\. The promise returns an Object\. The key
+of the Object is the provided url and the values are of type \fBBoolean\fP\|\.
+\fBtrue\fP indicates an online CouchDB / PouchDB node\.
+

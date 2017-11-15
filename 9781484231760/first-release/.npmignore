@@ -1,0 +1,6 @@
+/test/
+/docs/
+build.js
+
+.DS_Store
+npm-debug.log
